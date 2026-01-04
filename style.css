@@ -148,7 +148,7 @@ body {
   font-size: 36px;
   color: #f0f035;
 }
-
+    
 .underline {
   width: 60px;
   height: 3px;
@@ -992,4 +992,26 @@ footer small {
   display: block;
   margin-top: 15px;
   color: #666;
+
+}
+
+@media(max-width: 786px) {
+  body{
+    overflow-x: hidden;
+  }
+  .hero,about,education,skills {
+    flex-direction: column;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+* {
+  box-sizing: border-box;
 }
